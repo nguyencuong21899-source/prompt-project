@@ -103,5 +103,12 @@
     "description": "Phần mềm giúp ghép, tách, sửa, xóa, xoay,.. file PDF",
     "group": "Phần mềm công ty",
     "url": "https://tools.pdf24.org/vi/"
+  },
+  {
+    "id": "6655b7c9-d721-43af-bcf0-e74ac734e031",
+    "title": "Tạo QR free",
+    "description": "Phần mềm giúp tạo mã QR miễn phí",
+    "group": "Phần mềm công ty",
+    "url": "https://zxing.appspot.com/generator/"
   }
 ]
