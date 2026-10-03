@@ -518,6 +518,13 @@
       "description": "Chuyển đổi audio thành text, chuyển đổi text thành biên bản họp",
       "group": "Phần mềm công ty",
       "url": "https://stt.traphacocnc.com.vn/"
+    },
+    {
+      "id": "c79c8aba-abbf-4b57-9d91-37c00a1784f4",
+      "title": "Phần mềm Elearning",
+      "description": "Phần mềm tạo đề và làm bài kiểm tra công ty",
+      "group": "Phần mềm công ty",
+      "url": "https://thi.traphacocnc.com.vn/"
     }
   ]
 }
