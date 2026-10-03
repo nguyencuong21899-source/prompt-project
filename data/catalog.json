@@ -500,7 +500,7 @@
     },
     {
       "id": "11f013f5-f44f-4af9-b893-72a161d96dd5",
-      "title": "Phần mềm quản lý văn bản cũ",
+      "title": "QLVB cũ",
       "description": "Phần mềm quản lý văn bản cũ của công ty hiện tại chỉ dùng để xem phiếu kiểm nghiệm",
       "group": "Phần mềm công ty",
       "url": "http://qlvb.traphaco.vn:1972/login/user?next=%2fpersonal%2ffirstpage"
