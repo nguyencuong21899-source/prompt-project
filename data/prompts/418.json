@@ -1,0 +1,17 @@
+{
+  "id": "418",
+  "title": "Tạo dàn ý slide báo cáo cho lãnh đạo",
+  "description": "Chuyển tài liệu thành mạch trình bày, thông điệp và gợi ý biểu đồ.",
+  "content": "Tạo dàn ý slide cho buổi báo cáo với lãnh đạo, dựa trên tài liệu tôi cung cấp.\n- Mục tiêu buổi báo cáo/quyết định cần xin: [điền]\n- Thời lượng trình bày: [điền]\n- Số slide mong muốn: [điền hoặc để bạn đề xuất]\n- Tài liệu và số liệu: [dán hoặc đính kèm]\n\nĐầu ra là bảng: Số slide | Tiêu đề nêu thông điệp | Nội dung chính | Hình/biểu đồ phù hợp | Ghi chú người nói | Nguồn số liệu nếu có.\nƯu tiên mạch: hiện trạng → kết quả/vấn đề → nguyên nhân có căn cứ → phương án → kiến nghị cần quyết định. Mỗi slide chỉ có một thông điệp chính, khoảng 3–5 ý ngắn.\n\nGiữ đúng số liệu và đơn vị. Chỗ thiếu nguồn hoặc dữ kiện phải ghi “Cần bổ sung”. Gợi ý biểu đồ dựa trên loại dữ liệu, không tự dựng số. Chỉ tạo dàn ý và nội dung trong cuộc trò chuyện; không khẳng định đã tạo file PowerPoint nếu chưa có công cụ xuất file.",
+  "departmentId": "general",
+  "categoryId": "presentation",
+  "tags": [
+    "slide",
+    "báo cáo",
+    "lãnh đạo"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

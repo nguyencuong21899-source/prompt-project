@@ -1,0 +1,17 @@
+{
+  "id": "410",
+  "title": "Nhắc tiến độ lịch sự nhưng rõ trách nhiệm",
+  "description": "Viết tin nhắn hoặc email nhắc việc, xác nhận tiến độ và bước xử lý.",
+  "content": "Viết lời nhắc tiến độ cho công việc sau:\n- Công việc và người nhận: [điền]\n- Hạn đã thống nhất: [điền]\n- Tình trạng tôi biết: [điền]\n- Ảnh hưởng đến công việc tiếp theo: [điền]\n- Điều tôi cần người nhận phản hồi: [điền]\n\nCho tôi 2 phiên bản:\n1. Tin nhắn khoảng 60–100 từ, lịch sự và dễ gửi.\n2. Email khoảng 150 từ, có tiêu đề, tình trạng, yêu cầu cập nhật và đề nghị hỗ trợ.\n\nNêu đúng hạn đã thống nhất và yêu cầu xác nhận thời gian hoàn thành thực tế. Nếu chưa rõ lý do chậm, dùng câu hỏi trung lập; không quy kết thái độ hoặc năng lực. Không tự đặt một thời hạn mới như thể đã được hai bên đồng ý. Có thể đề xuất thời hạn nhưng phải ghi rõ cần xác nhận.",
+  "departmentId": "general",
+  "categoryId": "communication",
+  "tags": [
+    "nhắc việc",
+    "tiến độ",
+    "email"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

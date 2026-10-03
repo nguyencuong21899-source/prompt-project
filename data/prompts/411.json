@@ -1,0 +1,17 @@
+{
+  "id": "411",
+  "title": "Phản hồi phản ánh của khách hàng",
+  "description": "Soạn phản hồi bình tĩnh, xác minh sự việc và thống nhất bước tiếp theo.",
+  "content": "Soạn phản hồi cho phản ánh của khách hàng hoặc đối tác.\n- Nội dung phản ánh: [dán]\n- Thông tin đã được xác minh: [điền]\n- Chính sách hoặc phương án được phép áp dụng: [điền nếu có]\n- Kênh phản hồi: [email / tin nhắn]\n\nTrước tiên, phân biệt dữ kiện đã xác minh với điều cần kiểm tra. Sau đó viết phản hồi thể hiện đã hiểu vấn đề, nêu bước xử lý cụ thể và yêu cầu bổ sung cần thiết. Chỉ nêu thời gian phản hồi tiếp nếu tôi đã cung cấp; nếu chưa có thì để [thời gian cần xác nhận]. Không tự cam kết hoàn tiền, bồi thường, nhận trách nhiệm pháp lý hoặc kết luận chất lượng sản phẩm. Nếu phản ánh liên quan sức khỏe, chỉ ghi nhận và chuyển đến người phụ trách chuyên môn theo quy trình tôi cung cấp. Cuối cùng liệt kê tối đa 3 thông tin nội bộ cần xác minh trước khi gửi.",
+  "departmentId": "general",
+  "categoryId": "communication",
+  "tags": [
+    "khách hàng",
+    "phản ánh",
+    "giao tiếp"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

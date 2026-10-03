@@ -1,0 +1,17 @@
+{
+  "id": "422",
+  "title": "Soạn mô tả công việc theo đầu ra",
+  "description": "Viết JD rõ nhiệm vụ, kết quả mong đợi và yêu cầu thực sự cần thiết.",
+  "content": "Soạn bản nháp mô tả công việc cho vị trí [điền].\n- Bộ phận và người quản lý: [điền]\n- Mục đích của vị trí: [điền]\n- Nhiệm vụ thực tế, quyền hạn và phối hợp: [điền]\n- Yêu cầu chuyên môn đã được xác định: [điền]\n\nCấu trúc: Mục tiêu vị trí; 6–8 nhiệm vụ chính; đầu ra cần bàn giao; quan hệ phối hợp; quyền hạn theo thông tin đã cung cấp; yêu cầu bắt buộc; yêu cầu ưu tiên; gợi ý tiêu chí đánh giá.\nMỗi nhiệm vụ bắt đầu bằng động từ và gắn với đầu ra. Không tự thêm lương, phúc lợi hoặc quyền phê duyệt. Tiêu chí đánh giá do bạn đề xuất phải ghi rõ cần quản lý xác nhận. Chỉ dùng tiêu chí liên quan công việc; không tự thêm giới tính, tuổi, tình trạng gia đình hay đặc điểm cá nhân. Cuối cùng nêu thông tin còn thiếu để hoàn thiện JD.",
+  "departmentId": "general",
+  "categoryId": "writing",
+  "tags": [
+    "nhân sự",
+    "JD",
+    "mô tả công việc"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

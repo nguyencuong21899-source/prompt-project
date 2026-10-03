@@ -1,0 +1,17 @@
+{
+  "id": "414",
+  "title": "Soạn hướng dẫn thao tác nội bộ",
+  "description": "Tạo bản nháp quy trình dễ theo dõi từ cách làm đã được cung cấp.",
+  "content": "Từ cách làm hiện tại tôi cung cấp, soạn bản nháp hướng dẫn thao tác nội bộ cho nhân viên mới.\n- Tên công việc: [điền]\n- Đối tượng sử dụng: [điền]\n- Các bước thực tế và tài liệu đang áp dụng: [dán hoặc đính kèm]\n- Vai trò kiểm tra/phê duyệt nếu có: [điền]\n\nCấu trúc: Mục đích; phạm vi; điều kiện trước khi bắt đầu; trách nhiệm; bảng bước thực hiện; tình huống lỗi thường gặp; checklist kiểm tra kết quả; tài liệu tham chiếu.\nBảng bước gồm: Số bước | Ai thực hiện | Thao tác | Đầu ra | Cách kiểm tra.\n\nGiữ nguyên quy định và tên biểu mẫu trong nguồn. Chỗ nào thiếu cách thực hiện thì ghi “Cần xác nhận”, không tự thêm bước phê duyệt hoặc tiêu chuẩn bắt buộc. Tách các gợi ý cải tiến thành phần riêng. Gắn nhãn “Bản nháp để rà soát” vì tài liệu chưa được người có thẩm quyền phê duyệt.",
+  "departmentId": "general",
+  "categoryId": "writing",
+  "tags": [
+    "hướng dẫn",
+    "quy trình",
+    "nội bộ"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

@@ -1,0 +1,17 @@
+{
+  "id": "417",
+  "title": "So sánh phương án hoặc nhà cung cấp",
+  "description": "Lập bảng so sánh có tiêu chí rõ, tách dữ kiện và giả định.",
+  "content": "So sánh các phương án để hỗ trợ quyết định [điền].\n- Phương án/báo giá và thông tin nguồn: [dán hoặc đính kèm]\n- Tiêu chí bắt buộc: [điền]\n- Tiêu chí ưu tiên và trọng số nếu đã thống nhất: [điền]\n- Ngân sách, thời hạn và phạm vi sử dụng: [điền]\n\nĐầu ra:\n1. Bảng so sánh từng tiêu chí, chỉ rõ thiếu thông tin và điều kiện áp dụng.\n2. Tổng chi phí trong cùng phạm vi: tách giá ban đầu, vận hành, bảo trì và khoản chưa có báo giá.\n3. Điểm mạnh, điểm yếu và rủi ro của từng phương án.\n4. Khuyến nghị có điều kiện và câu hỏi cần gửi nhà cung cấp.\n\nKhông tự điền giá hoặc tính năng chưa có nguồn. Chuẩn hóa đơn vị, thuế và kỳ tính phí trước khi so sánh. Nếu cần chấm điểm mà chưa có trọng số, đề xuất trọng số để tôi duyệt; chưa gọi đó là điểm đánh giá chính thức. Tránh kết luận phương án rẻ nhất luôn tốt nhất.",
+  "departmentId": "general",
+  "categoryId": "analysis",
+  "tags": [
+    "so sánh",
+    "nhà cung cấp",
+    "lựa chọn"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

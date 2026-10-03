@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: prompt-hub-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: GITHUB_REPOSITORY
+        value: nguyencuong21899-source/prompt-project
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

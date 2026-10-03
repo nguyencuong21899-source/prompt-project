@@ -1,0 +1,28 @@
+name: Validate
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm run check
+      - run: docker build --tag prompt-hub-api:test .
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - name: Save interface previews
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: interface-previews
+          path: dist/*.png
+          if-no-files-found: ignore
+          retention-days: 7

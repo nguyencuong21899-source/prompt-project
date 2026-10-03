@@ -1,0 +1,34 @@
+[
+  {
+    "id": "general",
+    "name": "KHTH"
+  },
+  {
+    "id": "marketing",
+    "name": "Tài chính"
+  },
+  {
+    "id": "sales",
+    "name": "BPTKD"
+  },
+  {
+    "id": "hr",
+    "name": "QLCL"
+  },
+  {
+    "id": "finance",
+    "name": "QLTB"
+  },
+  {
+    "id": "px",
+    "name": "Phân xưởng"
+  },
+  {
+    "id": "hanh-chinh-quan-tri",
+    "name": "Hành chính quản trị"
+  },
+  {
+    "id": "tcns",
+    "name": "TCNS"
+  }
+]

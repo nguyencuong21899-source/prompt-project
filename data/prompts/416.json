@@ -1,0 +1,17 @@
+{
+  "id": "416",
+  "title": "Viết và giải thích công thức Excel",
+  "description": "Tạo công thức theo cấu trúc bảng, kèm ví dụ và cách kiểm tra kết quả.",
+  "content": "Giúp tôi viết công thức Excel cho yêu cầu: [điền].\n- Phiên bản Excel: [điền nếu biết]\n- Dấu phân cách công thức: [dấu phẩy / chấm phẩy / chưa rõ]\n- Tên sheet, cột và phạm vi dữ liệu: [điền]\n- Ví dụ đầu vào và kết quả mong muốn: [điền 2–3 dòng]\n\nNếu thiếu vị trí cột hoặc quy tắc tính, hỏi trước khi viết công thức cuối cùng.\nTrả lời gồm:\n1. Công thức có thể sao chép, kèm ô đặt công thức.\n2. Giải thích ngắn từng phần và cách kéo xuống nếu cần.\n3. Cách xử lý ô trống, giá trị không tìm thấy hoặc chia cho 0 phù hợp với yêu cầu.\n4. Bảng ít nhất 3 trường hợp kiểm tra, có kết quả dự kiến; ghi rõ đây là ví dụ giả định.\n5. Nếu dùng hàm chưa có ở phiên bản của tôi, cung cấp phương án tương thích.\n\nKhông tự giả định tên cột là dữ liệu thật. Không dùng IFERROR để che mọi lỗi khi tôi cần phát hiện dữ liệu sai. Nếu chưa chạy công thức, nói rõ cần kiểm tra trên file thực tế.",
+  "departmentId": "general",
+  "categoryId": "analysis",
+  "tags": [
+    "Excel",
+    "công thức",
+    "bảng tính"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

@@ -1,0 +1,64 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt CNC",
+  "version": "0.8.7",
+  "description": "Thư viện prompt nội bộ cho nhân viên",
+  "icons": {
+    "16": "extension/icons/16.png",
+    "32": "extension/icons/32.png",
+    "48": "extension/icons/48.png",
+    "128": "extension/icons/128.png"
+  },
+  "action": {
+    "default_title": "Mở Prompt CNC bên cạnh trang web",
+    "default_icon": {
+      "16": "extension/icons/16.png",
+      "32": "extension/icons/32.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "extension/popup.html"
+  },
+  "background": {
+    "service_worker": "extension/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "clipboardWrite",
+    "activeTab",
+    "scripting",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://raw.githubusercontent.com/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://localhost/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gemini.google.com/*",
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://perplexity.ai/*",
+        "https://www.perplexity.ai/*",
+        "https://copilot.microsoft.com/*",
+        "https://chat.deepseek.com/*",
+        "https://grok.com/*",
+        "https://poe.com/*"
+      ],
+      "js": [
+        "extension/injection.js",
+        "extension/content-script.js"
+      ]
+    }
+  ],
+  "optional_permissions": [
+    "bookmarks"
+  ]
+}

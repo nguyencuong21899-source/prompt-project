@@ -1,0 +1,86 @@
+[
+  {
+    "id": "chatgpt",
+    "title": "ChatGPT",
+    "url": "https://chatgpt.com/",
+    "group": "AI",
+    "description": "Trợ lý AI của OpenAI"
+  },
+  {
+    "id": "gemini",
+    "title": "Gemini",
+    "url": "https://gemini.google.com/app",
+    "group": "AI",
+    "description": "Trợ lý AI của Google"
+  },
+  {
+    "id": "claude",
+    "title": "Claude",
+    "url": "https://claude.ai/",
+    "group": "AI",
+    "description": "Trợ lý AI của Anthropic"
+  },
+  {
+    "id": "copilot",
+    "title": "Microsoft Copilot",
+    "url": "https://copilot.microsoft.com/",
+    "group": "AI",
+    "description": "Trợ lý AI của Microsoft"
+  },
+  {
+    "id": "deepseek",
+    "title": "DeepSeek",
+    "url": "https://chat.deepseek.com/",
+    "group": "AI",
+    "description": "Trò chuyện với DeepSeek"
+  },
+  {
+    "id": "perplexity",
+    "title": "Gemini notebook",
+    "description": "Công cụ AI gemini notebook",
+    "group": "Phần mềm AI",
+    "url": "https://notebook.google/"
+  },
+  {
+    "id": "4313797f-a9a6-4c58-90e0-84138db8ddfa",
+    "title": "HRM",
+    "description": "Phân mềm nhân sự",
+    "group": "Phần mềm công ty",
+    "url": "https://hrm.traphaco.vn:8087/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dtraphaco_portal%26redirect_uri%3Dhttps%253A%252F%252Fhrm.traphaco.vn%253A8081%252FPortal%252FExternalLoginRedirect%252FProvider-01%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520offline_access%2520api%2520IdentityServerApi%26code_challenge%3DTJEFTuKq6cxNmoZO8oYGSPu14swVoruqo0PN8FGguV0%26code_challenge_method%3DS256%26state%3DOpenIdConnect.AuthenticationProperties%253DWZGgJ99XKT6GaKl_PsQXp_OZppjLr8qGuEiqO84w8Fz3P12UrNAp_yIeyxtaOpD4R19m4fiSeNYoMrMhyliga5bQjkBPVRIuoQ10OdgC40ax_0SCZkPoEsKLfv1sBUU9mljfUAnx1lhVvADSEOpPuNbNT32SZ7Vl3Jg7qhyeoyLjC1Mhok67UgdDVmMKBMqE6fgHwGmFemGVMztQASAT1ZKWaD21X3l83K_s-H8yMTlL-FUp-PbDcZCYGwN5amOhTORpqx9ShNL0JrfHmMTxL4W3VWWC91K4k26ukSdefof7v-XyzUdYJLuuEDiao9gs%26response_mode%3Dform_post%26nonce%3D639265088867404065.ODJhYjJlZTctNWY4Yy00ZmQ1LWIwNjMtZTkzZTM2ZDNiNDM5MTk4MzRmMDgtM2YxZS00NGVkLThiYjUtYjM1MmQ3NjljMGJm%26x-client-SKU%3DID_NET461%26x-client-ver%3D6.17.0.0"
+  },
+  {
+    "id": "db391a93-4be7-4b99-b4fc-94e24b203269",
+    "title": "Base.vn",
+    "description": "Phần mềm văn phòng số Base",
+    "group": "Phần mềm công ty",
+    "url": "https://xspace.base.vn/"
+  },
+  {
+    "id": "609c2912-c9af-469b-a13f-e5ad31394c1c",
+    "title": "Mail traphaco.com.vn",
+    "description": "Mail mới của công ty",
+    "group": "Phần mềm công ty",
+    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3A%2F%2Foutlook.office.com%2F.default%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Foutlook.live.com%2Fmail%2F&client-request-id=259b258b-4cd9-278f-88a2-f888be9bb9a0&response_mode=fragment&client_info=1&clidata=1&prompt=select_account&nonce=01a0fac2-5e7a-75f2-a979-8a0e2cac7298&state=eyJpZCI6IjAxYTBmYWMyLTVlN2EtN2ExOS04MzlkLTU3YjE4ZGQ5OGM4NyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7CaHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvP2RlZXBsaW5rPW1haWwlMkYmc2Vzc2lvbklkPTk5NmRjNTlhLTY5MTktNDlmNi1hNmNhLWE5ZWIxNWRjY2FjYw%7CeyJwcm9tcHQiOiJzZWxlY3RfYWNjb3VudCJ9&claims=%7B%22access_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&x-client-SKU=msal.js.browser&x-client-VER=5.12.0&response_type=code&code_challenge=mr0Bte2XKXLmXm4C23rhr1wOVknur4q6GfzxL7Inbh4&code_challenge_method=S256&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c&fl=dob%2Cflname%2Cwld"
+  },
+  {
+    "id": "a94e3191-b082-4a17-9fc4-5ab97a8c8b9a",
+    "title": "Mail traphacocnc.com",
+    "description": "Email cũ công ty",
+    "group": "Phần mềm công ty",
+    "url": "https://mail.traphacocnc.com/"
+  },
+  {
+    "id": "11f013f5-f44f-4af9-b893-72a161d96dd5",
+    "title": "Phần mềm quản lý văn bản cũ",
+    "description": "Phần mềm quản lý văn bản cũ của công ty hiện tại chỉ dùng để xem phiếu kiểm nghiệm",
+    "group": "Phần mềm công ty",
+    "url": "http://qlvb.traphaco.vn:1972/login/user?next=%2fpersonal%2ffirstpage"
+  },
+  {
+    "id": "c6d8a230-8449-4e34-a800-3201876a73d8",
+    "title": "Hồ sơ lô điện tử",
+    "description": "Phần mềm Hồ sơ lô điện tử công ty",
+    "group": "Phần mềm công ty",
+    "url": "https://hsl.traphacocnc.com:44369/Account/Login"
+  }
+]

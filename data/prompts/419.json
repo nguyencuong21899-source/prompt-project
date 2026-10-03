@@ -1,0 +1,17 @@
+{
+  "id": "419",
+  "title": "Viết lời thuyết trình và chuẩn bị hỏi đáp",
+  "description": "Soạn lời nói theo slide và dự kiến câu hỏi cần chuẩn bị.",
+  "content": "Soạn lời thuyết trình dựa trên slide hoặc dàn ý tôi gửi.\n- Người nghe: [điền]\n- Mục tiêu: [điền]\n- Thời gian được trình bày: [điền]\n- Slide/dàn ý: [đính kèm hoặc dán]\n\nĐầu ra:\n1. Mở đầu khoảng 30 giây, nêu mục tiêu và lý do người nghe cần quan tâm.\n2. Lời nói cho từng slide, câu chuyển ý và thời lượng dự kiến; văn phong nói tự nhiên.\n3. Kết thúc nêu thông điệp chính và hành động mong người nghe thực hiện.\n4. 5 câu hỏi có thể được đặt ra, câu trả lời dựa trên tài liệu và điểm cần xác minh.\n\nKhông đọc lại nguyên văn toàn bộ slide. Không thêm thành tích hay số liệu. Kiểm tra tổng thời lượng phù hợp với giới hạn; nếu nội dung quá nhiều, chỉ rõ phần nên rút. Nếu câu hỏi vượt dữ liệu, dùng câu trả lời nhận biết giới hạn và nêu cách bổ sung thay vì đoán.",
+  "departmentId": "general",
+  "categoryId": "presentation",
+  "tags": [
+    "thuyết trình",
+    "slide",
+    "hỏi đáp"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

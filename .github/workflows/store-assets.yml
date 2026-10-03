@@ -1,0 +1,22 @@
+name: Store assets
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/store-assets.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chrome-store-assets
+          path: dist/store-assets/*
+          if-no-files-found: error
+          retention-days: 30

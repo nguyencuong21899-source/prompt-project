@@ -1,0 +1,17 @@
+{
+  "id": "423",
+  "title": "Nhận diện rủi ro và kế hoạch theo dõi dự án",
+  "description": "Lập sổ rủi ro với dấu hiệu cảnh báo và hành động kiểm soát.",
+  "content": "Dựa trên kế hoạch và bối cảnh sau, lập bản nháp sổ rủi ro cho dự án:\n- Mục tiêu, phạm vi và kế hoạch: [dán hoặc đính kèm]\n- Nguồn lực, phụ thuộc và ràng buộc: [điền]\n- Các vấn đề đã xảy ra: [điền nếu có]\n\nTách vấn đề đã xảy ra khỏi rủi ro có thể xảy ra. Đưa tối đa 10 rủi ro phù hợp với bối cảnh, không liệt kê các tình huống chung thiếu liên hệ.\nBảng: Rủi ro | Dữ kiện/giả định làm căn cứ | Khả năng (thấp/vừa/cao, ước tính) | Tác động | Dấu hiệu cảnh báo | Hành động phòng ngừa | Phương án khi xảy ra | Vai trò theo dõi đề xuất.\nCuối cùng nêu 3 rủi ro cần ưu tiên và lịch rà soát đề xuất. Không tự tạo tỷ lệ xác suất hoặc tổn thất tài chính. Các đánh giá do bạn suy luận phải được ghi là dự kiến để nhóm dự án xác nhận.",
+  "departmentId": "general",
+  "categoryId": "planning",
+  "tags": [
+    "rủi ro",
+    "dự án",
+    "theo dõi"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

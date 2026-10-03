@@ -1,0 +1,16 @@
+{
+  "id": "402",
+  "title": "GIAO TIẾP & THUYẾT PHỤC",
+  "description": "giao tiếp",
+  "content": "Tôi cần thuyết phục / giao tiếp về: [Ý tưởng / đề xuất / vấn đề]\nNgười tôi cần thuyết phục/ giao tiếp là: [Vai trò + mức độ ra quyết định]\nĐiều họ quan tâm nhất: [1–2 yếu tố chính – ví dụ: hiệu quả, chi phí, rủi ro, tốc độ…]\nQuan điểm hiện tại của họ: [Ủng hộ / Trung lập / Hoài nghi/ chưa tiếp cận]\nKết quả tôi mong muốn: [Họ đồng ý, phê duyệt hoặc hành động điều gì]\nHãy giúp tôi:\n1. Chọn góc tiếp cận phù hợp nhất với người này\n2. Đề xuất 2–3 luận điểm then chốt dễ tạo đồng thuận\n3. Dự đoán phản biện lớn nhất và cách phản hồi hợp lý\n4. Gợi ý cách mở đầu và kết thúc để tăng khả năng họ đồng ý\nBối cảnh bổ sung: [Mối quan hệ, lịch sử trao đổi trước đó, yếu tố tổ chức cần lưu ý]",
+  "departmentId": "general",
+  "categoryId": "communication",
+  "tags": [
+    "giao tiếp",
+    "thuyết phục"
+  ],
+  "variables": [],
+  "author": "Prompt Hub",
+  "updatedAt": "2026-10-01",
+  "schemaVersion": 1
+}

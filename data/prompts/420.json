@@ -1,0 +1,17 @@
+{
+  "id": "420",
+  "title": "Soạn thông báo nội bộ dễ thực hiện",
+  "description": "Viết thông báo nêu rõ ai cần làm gì, ở đâu và trước khi nào.",
+  "content": "Soạn thông báo nội bộ cho nội dung:\n- Chủ đề: [điền]\n- Đối tượng nhận: [điền]\n- Thay đổi hoặc việc cần thực hiện: [điền]\n- Thời gian, địa điểm, thời hạn: [điền nếu có]\n- Đầu mối hỗ trợ và kênh liên hệ: [điền]\n- Văn bản/quyết định đã ban hành làm căn cứ: [điền nếu có]\n\nCho 1 bản email đầy đủ và 1 bản tin nhắn ngắn tối đa 100 từ. Dùng tiêu đề rõ, đưa điều cần làm lên đầu, liệt kê các bước và kết thúc bằng đầu mối hỗ trợ. Giữ nguyên tên phòng, địa điểm và thời gian. Không tự thêm nghĩa vụ, chế tài hoặc nói “đã được ban lãnh đạo phê duyệt” khi chưa có căn cứ. Để [cần điền] ở chi tiết còn thiếu trước khi phát hành.",
+  "departmentId": "general",
+  "categoryId": "communication",
+  "tags": [
+    "thông báo",
+    "nội bộ",
+    "hành chính"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

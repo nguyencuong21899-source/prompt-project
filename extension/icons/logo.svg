@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Prompt CNC">
+  <defs><linearGradient id="background" x2="1" y2="1"><stop stop-color="#183d86"/><stop offset="1" stop-color="#142750"/></linearGradient></defs>
+  <rect width="128" height="128" rx="29" fill="url(#background)"/>
+  <path d="M91 37a38 38 0 1 0 0 54" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="15"/>
+  <circle cx="91" cy="37" r="8" fill="#56e6ba"/>
+  <circle cx="91" cy="91" r="8" fill="#65a4ff"/>
+</svg>

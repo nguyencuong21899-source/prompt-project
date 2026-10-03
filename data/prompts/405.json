@@ -1,0 +1,13 @@
+{
+  "id": "405",
+  "title": "LẬP KẾ HOẠCH TTTT",
+  "description": "Lập kế hoạch chung chung",
+  "content": "Tôi cần lập kế hoạch cho: [Dự án / Sáng kiến / Chương trình]\nMục tiêu cuối cùng: [Kết quả muốn đạt được – cần cụ thể và có thể đo lường]\nThời gian triển khai: [Mốc thời gian quan trọng, deadline hoặc thời điểm cần ra mắt]\nNguồn lực hiện có:\n1/ Nhân sự: [Số lượng, vai trò, mức độ kinh nghiệm]\n2/ Ngân sách: [Khoảng ngân sách có thể sử dụng]\n3/ Công cụ / Hệ thống: [Những công cụ đang có và những gì cần bổ sung]\nCác ràng buộc cần lưu ý: [Giới hạn về công nghệ, tổ chức, pháp lý hoặc yếu tố nội bộ]\nHãy giúp tôi:\n1/ Đề xuất hướng tiếp cận phù hợp (triển khai theo giai đoạn, thử nghiệm trước rồi mở rộng, hay triển khai đồng loạt…)\n2/ Chia kế hoạch thành các giai đoạn hoặc cột mốc rõ ràng, kèm mốc thời gian cho từng giai đoạn\n3/ Xác định các chỉ số thành công và KPI để theo dõi tiến độ\n4/ Chỉ ra những rủi ro lớn nhất có thể gặp và cách giảm thiểu\n5/ Đề xuất cách phân bổ nguồn lực cho từng giai đoạn\n6/ Gợi ý các “quick wins” có thể đạt được sớm để tạo đà\n7/ Xác định 3–5 bước hành động cụ thể để bắt đầu ngay\nTrình bày rõ ràng, có cấu trúc, tập trung vào tính khả thi và đo lường được, tránh các khuyến nghị chung chung.",
+  "departmentId": "general",
+  "categoryId": "planning",
+  "tags": [],
+  "variables": [],
+  "author": "Prompt Hub",
+  "updatedAt": "2026-10-01",
+  "schemaVersion": 1
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prompt CNC</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <label class="search"><span data-icon="search" aria-hidden="true"></span><input id="search" type="search" aria-label="Tìm prompt" placeholder="Tìm tên, nội dung hoặc #ID..." autocomplete="off" /></label>
+      <div class="header-actions"><button id="open-tab" class="icon-button" title="Mở trong tab" aria-label="Mở trong tab" data-icon="expand"></button><button id="settings-button" class="icon-button" title="Cài đặt và quản lý prompt" aria-label="Cài đặt" data-icon="settings"></button></div>
+    </header>
+    <main id="library-view"><nav class="main-navigation" aria-label="Mục chính"><button id="prompt-main" class="tab-button" type="button" aria-pressed="true">Prompt</button><button id="links-tab" class="tab-button" type="button" aria-pressed="false">Liên kết</button></nav>
+      <div class="controls">
+        <div class="filters"><label><span class="sr-only">Danh mục</span><select id="category"><option value="">Tất cả danh mục</option></select></label><label><span class="sr-only">Sắp xếp</span><select id="sort-order"><option value="default">Thứ tự mặc định</option><option value="recent">Gần đây</option><option value="frequent">Dùng nhiều</option><option value="title">Tên A–Z</option></select></label></div>
+      </div>
+      <div class="library-toolbar"><div id="prompt-scopes" class="tabs" aria-label="Thư viện prompt"><button id="all-prompts" class="tab-button" aria-pressed="true">Công ty</button><button id="personal-prompts" class="tab-button" aria-pressed="false">Của tôi</button></div><div class="toolbar-actions"><button id="open-optimizer" class="optimizer-shortcut" type="button" title="Tối ưu prompt bằng AI" aria-label="Tối ưu prompt bằng AI" data-icon="sparkles">Tối ưu prompt</button><button id="favorite-prompts" class="round" aria-label="Yêu thích" title="Chỉ hiện prompt yêu thích" aria-pressed="false" data-icon="star"></button><button id="refresh-button" class="round" title="Kiểm tra dữ liệu mới trên máy chủ" aria-label="Làm mới" data-icon="refresh"></button></div></div>
+      <div id="chat-target-row" class="chat-target-row" hidden><label>Chèn vào <select id="chat-target" aria-label="Tab AI nhận prompt"><option value="">Chọn tab AI</option></select></label><button id="refresh-targets" class="round" aria-label="Làm mới danh sách tab AI" data-icon="refresh"></button></div>
+      <div id="link-type-tabs" class="link-type-tabs" aria-label="Loại phần mềm" hidden><button id="company-links" class="tab-button" type="button" aria-pressed="true">Phần mềm công ty</button><button id="ai-links" class="tab-button" type="button" aria-pressed="false">Phần mềm AI</button></div><div id="list-header" class="list-header"><div class="result-summary"><span id="result-count" class="sr-only" aria-live="polite"></span><button id="reset-filters" class="link-button" hidden>Xóa bộ lọc</button></div><div class="toolbar-actions"><button id="new-personal" class="optimizer-shortcut" type="button" hidden data-icon="plus">Thêm</button><div id="personal-transfer" class="personal-transfer" hidden><button id="export-personal" class="link-button" type="button">Xuất file</button><button id="import-personal" class="link-button" type="button">Nhập file</button><input id="personal-import-file" type="file" accept=".json,application/json" hidden /></div><button id="bookmark-all" class="link-button" type="button" hidden>Lưu tất cả dấu trang</button></div></div>
+      
+      <div id="status" role="status"></div>
+      <div id="prompt-list" class="prompt-list"></div>
+    </main>
+    <section id="personal-view" class="subview" hidden>
+      <div class="subhead"><button id="back-personal" class="back-button" type="button" aria-label="Trở lại thư viện">←</button><h1 id="personal-title">Thêm prompt cá nhân</h1></div>
+      <p class="hint">Lưu riêng trong trình duyệt trên máy này, không gửi lên máy chủ. Gỡ extension hoặc xóa dữ liệu trình duyệt sẽ làm mất thư viện cá nhân.</p>
+      <form id="personal-form" class="form-panel"><label>Tên prompt <input name="title" maxlength="100" required /></label><label>Mô tả ngắn <input name="description" maxlength="240" /></label><label>Danh mục <input name="categoryId" maxlength="60" placeholder="Ví dụ: Email, Báo cáo…" list="personal-categories" /><datalist id="personal-categories"></datalist></label><label>Nội dung prompt <textarea name="content" rows="12" maxlength="20000" required></textarea></label><button class="primary full-width" type="submit" data-icon="check">Lưu trên máy</button><p id="personal-status" role="status"></p></form>
+    </section>
+    <section id="optimizer-view" class="subview" hidden>
+      <div class="subhead"><button id="back-optimizer" class="back-button" type="button" aria-label="Trở lại thư viện">←</button><h1>Tối ưu prompt</h1></div>
+      <p class="eyebrow">Trợ lý viết prompt</p><p class="intro">Mô tả điều bạn muốn làm. Gemini sẽ giúp làm rõ mục tiêu, bối cảnh và cách trình bày kết quả.</p>
+      <form id="optimizer-form" class="form-panel">
+        <label><span class="field-caption">Prompt ban đầu <small id="optimizer-count">0 / 6.000</small></span><textarea id="optimizer-input" rows="7" minlength="10" maxlength="6000" placeholder="Tôi muốn viết email mời khách hàng tham dự sự kiện. Giọng văn thân thiện, nêu rõ thời gian và địa điểm..." required></textarea></label>
+        <button id="optimize-button" class="primary full-width" type="submit" data-icon="sparkles">Tối ưu bằng AI</button><p class="hint">Chỉ nội dung bạn gửi được chuyển đến Google Gemini. Bản nháp được giữ trên máy này.</p>
+      </form>
+      <p id="optimizer-status" role="status"></p>
+      <div id="optimizer-result-wrap" class="form-panel" hidden>
+        <label>Prompt đã tối ưu <textarea id="optimizer-result" rows="11" maxlength="12000"></textarea></label>
+        <div class="optimizer-actions"><button id="copy-optimized" class="primary" type="button" data-icon="copy">Sao chép</button><button id="insert-optimized" class="secondary" type="button" data-icon="bolt">Chèn vào chat</button></div>
+      </div>
+    </section>
+    <section id="settings-view" class="subview" hidden>
+      <div class="subhead"><button class="back-button" aria-label="Trở lại thư viện">←</button><h1>Cài đặt</h1></div>
+      <p id="admin-unavailable" class="unavailable" hidden>Máy chủ quản lý prompt chưa được kết nối. Thư viện vẫn dùng được; người quản trị cần bật dịch vụ nhận thay đổi một lần cho cả công ty.</p>
+      <form id="unlock-form" class="form-panel" hidden>
+        <p class="eyebrow">Quản lý thư viện</p><p class="intro">Thêm, sửa prompt và tổ chức danh mục cho mọi người trong công ty.</p>
+        <label>Mật khẩu quản lý <input id="admin-password" type="password" placeholder="Nhập mật khẩu quản lý" autocomplete="off" required /></label>
+        <button class="primary full-width" type="submit" data-icon="lock">Mở quản lý prompt</button>
+      </form>
+      <div id="manage-view" hidden>
+        <div class="manage-header"><strong>Quản lý prompt</strong><button id="lock-button" class="link-button">Khóa lại</button></div>
+        <p class="hint">Ai có mật khẩu đều có thể thêm, sửa và xóa prompt. Thay đổi được lưu trên máy chủ cho mọi người sử dụng.</p>
+        <div class="manage-toolbar"><button id="new-prompt" class="primary" type="button" data-icon="plus">Thêm prompt</button><button id="reload-managed" class="secondary" type="button" data-icon="refresh">Làm mới danh sách</button></div>
+        <label class="manage-search">Tìm trong thư viện <input id="manage-search" type="search" placeholder="Tên prompt hoặc ID" /></label>
+        <div class="taxonomy-toolbar"><button id="manage-links" class="secondary" type="button">Quản lý liên kết</button><button id="manage-categories" class="secondary" type="button">Quản lý danh mục</button></div>
+        <div id="manage-list" class="manage-list"></div>
+      </div>
+      <div id="links-manager" hidden>
+        <div class="subhead"><button id="back-links" class="back-button" type="button" aria-label="Quay lại quản lý">←</button><h2>Quản lý liên kết</h2></div>
+        <p class="hint">Liên kết công khai cho mọi nhân viên. Chỉ lưu đường dẫn, không lưu mật khẩu.</p>
+        <form id="link-form" class="form-panel"><label>Tên công cụ <input name="title" maxlength="100" required /></label><label>Đường dẫn <input name="url" type="url" maxlength="2048" placeholder="https://..." required /></label><label>Danh mục <input name="group" maxlength="60" list="link-groups" placeholder="Phần mềm AI hoặc Phần mềm công ty" required /><datalist id="link-groups"></datalist></label><label>Mô tả <input name="description" maxlength="240" /></label><div class="form-actions"><button class="primary" type="submit">Lưu liên kết</button><button id="cancel-link" class="secondary" type="button" hidden>Hủy sửa</button></div></form>
+        <div id="managed-links-list" class="manage-list"></div>
+      </div>
+      <div id="taxonomy-view" hidden>
+        <div class="subhead"><button id="back-taxonomy" class="back-button" type="button" aria-label="Quay lại quản lý">←</button><h2 id="taxonomy-title"></h2></div>
+        <p class="hint">Đổi tên sẽ cập nhật bộ lọc và giữ nguyên prompt. Muốn xóa một mục đang được dùng, hãy chuyển các prompt sang mục khác trước.</p>
+        <form id="taxonomy-form">
+          <label id="taxonomy-name-label">Tên <input id="taxonomy-name" name="name" maxlength="60" required /></label>
+          <button id="taxonomy-save" class="primary" type="submit">Thêm mục</button><button id="taxonomy-cancel" class="secondary" type="button" hidden>Hủy sửa</button>
+        </form>
+        <div id="taxonomy-list" class="manage-list"></div>
+      </div>
+      <form id="editor-form" class="form-panel" hidden>
+        <div class="subhead"><button id="cancel-edit" class="back-button" type="button" aria-label="Quay lại danh sách">←</button><h2 id="editor-title">Thêm prompt</h2></div>
+        <label>Tên prompt <input name="title" maxlength="100" required /></label>
+        <label>Mô tả ngắn <input name="description" maxlength="240" required /></label>
+        <input name="departmentId" id="admin-department" type="hidden" />
+        <label>Danh mục <select name="categoryId" id="admin-category" required></select></label>
+        <label>Nội dung prompt <textarea name="content" rows="9" maxlength="20000" required></textarea></label>
+        <label>Từ khóa, cách nhau bằng dấu phẩy <input name="tags" maxlength="200" /></label>
+        <p class="hint">Không đưa mật khẩu hoặc dữ liệu khách hàng thật vào ví dụ.</p>
+        <button class="primary full-width" type="submit" data-icon="check">Lưu lên máy chủ</button>
+      </form>
+      <p id="admin-status" role="status"></p>
+    </section>
+    <footer><span id="sync-label" role="status" data-state="offline">Dữ liệu mẫu</span><span id="app-version" class="version"></span></footer>
+  </div>
+  <dialog id="prompt-preview" aria-labelledby="preview-title">
+    <div class="preview-header"><div><span class="eyebrow">Xem trước prompt</span><h2 id="preview-title"></h2></div><button id="close-preview" class="icon-button" type="button" aria-label="Đóng xem trước" data-icon="close" autofocus></button></div>
+    <div class="preview-scroll"><p id="preview-description"></p><div class="preview-meta"><span id="preview-category" class="category-chip"></span><span id="preview-id" class="id"></span></div><pre id="preview-content" tabindex="0" aria-label="Nội dung prompt"></pre></div>
+    <div id="personal-preview-actions" class="personal-preview-actions" hidden><button id="edit-personal-preview" class="secondary" type="button">Sửa prompt</button><button id="delete-personal-preview" class="secondary" type="button">Xóa prompt</button></div><p id="preview-feedback" role="status"></p><div class="preview-actions"><button id="copy-preview" class="primary" type="button" data-icon="copy">Sao chép</button><button id="insert-preview" class="secondary insert-action" type="button" data-icon="bolt">Chèn vào chat</button></div>
+  </dialog>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

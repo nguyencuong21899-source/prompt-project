@@ -1,0 +1,17 @@
+{
+  "id": "413",
+  "title": "Sắp xếp ưu tiên công việc trong tuần",
+  "description": "Chọn việc cần làm trước theo hạn, tác động và nguồn lực thực tế.",
+  "content": "Giúp tôi sắp xếp công việc cho tuần [điền], với quỹ thời gian [điền số giờ].\nDanh sách việc, hạn, mức quan trọng, thời lượng ước tính và phụ thuộc:\n[dán danh sách ở đây]\n\nĐầu ra:\n- Bảng xếp ưu tiên: Công việc | Lý do ưu tiên | Thời lượng | Hạn | Phụ thuộc | Bước đầu tiên.\n- Lịch làm việc theo ngày, có thời gian dự phòng cho việc phát sinh.\n- Những việc cần hoãn, giao lại hoặc thương lượng thời hạn nếu tổng thời lượng vượt quỹ thời gian.\n- Tối đa 3 câu hỏi cần làm rõ.\n\nƯu tiên dựa trên hạn thực tế, tác động và công việc đang chặn người khác. Không tự gán tất cả là khẩn cấp. Ghi rõ thời lượng do bạn ước tính; không xếp hai việc cùng một thời điểm hoặc bỏ qua phụ thuộc. Nếu tôi chưa cung cấp giờ làm việc, đề xuất lịch theo khối thời gian thay vì tự đặt giờ bắt đầu.",
+  "departmentId": "general",
+  "categoryId": "planning",
+  "tags": [
+    "ưu tiên",
+    "tuần",
+    "công việc"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

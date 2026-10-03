@@ -1,0 +1,17 @@
+{
+  "id": "421",
+  "title": "Checklist tổ chức họp hoặc đào tạo",
+  "description": "Chuẩn bị đầu việc trước, trong và sau buổi họp hoặc đào tạo.",
+  "content": "Lập checklist cho buổi họp/đào tạo sau:\n- Chủ đề và mục tiêu: [điền]\n- Ngày, hình thức, địa điểm: [điền]\n- Số người, thành phần: [điền]\n- Thời lượng và nguồn lực hiện có: [điền]\n\nChia thành trước buổi, trong buổi và sau buổi. Bảng gồm: Việc cần làm | Mốc thực hiện | Vai trò phụ trách đề xuất | Điều kiện hoàn tất | Ghi chú.\nBao gồm nội dung/chương trình, lời mời, tài liệu, thiết bị hoặc đường dẫn họp, xác nhận tham dự, ghi nhận quyết định, đánh giá và gửi tài liệu sau buổi nếu phù hợp.\nCuối cùng đưa 3 sự cố có thể gặp và phương án dự phòng. Không tự đặt ngân sách, nhà cung cấp hoặc tên nhân sự. Mốc chưa có ngày cụ thể dùng T-3, T-1, T+1 và giải thích T là ngày diễn ra buổi.",
+  "departmentId": "general",
+  "categoryId": "planning",
+  "tags": [
+    "họp",
+    "đào tạo",
+    "checklist"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

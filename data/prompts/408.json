@@ -1,0 +1,17 @@
+{
+  "id": "408",
+  "title": "Biên bản họp và bảng giao việc",
+  "description": "Tách quyết định, đề xuất và đầu việc từ ghi chú hoặc bản ghi cuộc họp.",
+  "content": "Chuyển ghi chú hoặc bản chép lời cuộc họp thành biên bản có thể gửi cho các thành viên.\n\nThông tin:\n- Chủ đề, ngày họp: [điền nếu có]\n- Người tham gia: [điền nếu có]\n<ghi_chu_hop>\n[dán ghi chú hoặc đính kèm bản chép lời]\n</ghi_chu_hop>\n\nTrình bày:\n1. Mục đích và các nội dung đã trao đổi.\n2. Quyết định đã thống nhất; tách riêng đề xuất chưa được chấp thuận.\n3. Bảng giao việc: Đầu việc | Người phụ trách | Hạn hoàn thành | Kết quả cần bàn giao | Điểm cần xác nhận.\n4. Vấn đề chưa thống nhất và câu hỏi cần bổ sung.\n5. Email gửi biên bản, tối đa 100 từ.\n\nKhông biến ý kiến của một người thành quyết định chung. Không tự gán người phụ trách hoặc hạn hoàn thành. Ví dụ: nguồn ghi “cần gửi báo giá” nhưng không nêu người và ngày thì hai ô tương ứng phải ghi “Chưa xác định”. Giữ số liệu và tên riêng đúng nguồn.",
+  "departmentId": "general",
+  "categoryId": "writing",
+  "tags": [
+    "họp",
+    "biên bản",
+    "giao việc"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

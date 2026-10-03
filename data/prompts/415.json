@@ -1,0 +1,17 @@
+{
+  "id": "415",
+  "title": "Phân tích bảng số liệu và tìm điểm bất thường",
+  "description": "Kiểm tra dữ liệu, đối chiếu chỉ tiêu và chỉ ra vấn đề có căn cứ.",
+  "content": "Phân tích bảng số liệu tôi gửi nhằm trả lời câu hỏi: [điền].\n- Ý nghĩa các cột và đơn vị: [điền nếu chưa rõ trong file]\n- Kỳ báo cáo và kỳ so sánh: [điền]\n- Chỉ tiêu hoặc ngưỡng cần đối chiếu: [điền nếu có]\n<du_lieu>\n[dán bảng hoặc đính kèm Excel/CSV]\n</du_lieu>\n\nĐầu ra:\n1. Kiểm tra chất lượng: thiếu dữ liệu, trùng, khác đơn vị, sai kiểu dữ liệu.\n2. Bảng chỉ tiêu chính, kèm công thức tính và phạm vi dòng được dùng.\n3. Những thay đổi hoặc điểm bất thường có thể đối chiếu trong dữ liệu.\n4. Kết luận có căn cứ và câu hỏi cần xác minh; đề xuất 3 biểu đồ phù hợp.\n\nKhông tự bổ sung dữ liệu thiếu. Nếu mẫu số bằng 0, ghi tỷ lệ không xác định; không tính phần trăm tăng trưởng sai. Phân biệt tương quan với nguyên nhân. Khi không có công cụ đọc/tính file, nói rõ giới hạn và đưa cách kiểm tra trong Excel; không giả vờ đã tính.",
+  "departmentId": "general",
+  "categoryId": "analysis",
+  "tags": [
+    "Excel",
+    "số liệu",
+    "báo cáo"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

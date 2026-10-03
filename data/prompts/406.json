@@ -1,0 +1,17 @@
+{
+  "id": "406",
+  "title": "Báo cáo công việc tuần cho quản lý",
+  "description": "Biến ghi chú thành báo cáo kết quả, vướng mắc và kế hoạch tuần tới.",
+  "content": "Soạn báo cáo công việc tuần để gửi quản lý trực tiếp, ngắn gọn và dễ theo dõi.\n\nThông tin cần điền:\n- Bộ phận/người báo cáo: [điền]\n- Tuần báo cáo: [điền]\n- Ghi chú kết quả, số liệu, việc chưa xong và kế hoạch: [dán ở đây hoặc đính kèm file]\n\nTrình bày:\n1. Tóm tắt điều đáng chú ý trong tối đa 5 dòng.\n2. Bảng: Công việc | Kết quả thực tế | Trạng thái | Vướng mắc | Bước tiếp theo.\n3. Những việc cần quản lý quyết định hoặc hỗ trợ.\n4. Kế hoạch tuần tới: ưu tiên, đầu ra và hạn hoàn thành; người phụ trách nếu có trong dữ liệu.\n\nGiữ nguyên số liệu, tên công việc và thời hạn. Phân biệt đã hoàn thành với đang thực hiện. Không tự thêm thành tích, phần trăm tiến độ hoặc ngày hoàn thành. Thông tin chưa có ghi “Chưa cung cấp”. Văn phong tiếng Việt rõ ràng, khoảng 400–600 từ.",
+  "departmentId": "general",
+  "categoryId": "writing",
+  "tags": [
+    "báo cáo",
+    "tuần",
+    "quản lý"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

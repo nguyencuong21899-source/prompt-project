@@ -1,0 +1,13 @@
+{
+  "id": "424",
+  "title": "Tạo lại file excel bị lỗi giật lác",
+  "description": "Bạn chỉ cần đẩy file excel vào là AI sẽ tạo lại file excel mới mà hết bị lỗi giật lác",
+  "content": "Hãy phân tích file Excel tôi đính kèm, tìm các nguyên nhân khiến file nặng hoặc chạy chậm như format dư, Used Range thừa, style trùng, công thức nặng, ảnh/object lớn, dữ liệu rác...\n\nSau đó tạo lại một file Excel đã tối ưu, nhưng phải giữ nguyên toàn bộ dữ liệu, công thức, định dạng, sheet, hình ảnh, biểu đồ và chức năng của file gốc.\n\nChỉ xóa/tối ưu những thành phần chắc chắn không cần thiết. Nếu không chắc chắn thì giữ nguyên.\n\nCuối cùng, gửi lại cho tôi file Excel đã tối ưu và cho biết dung lượng trước/sau cùng nguyên nhân chính khiến file bị nặng.",
+  "departmentId": "general",
+  "categoryId": "excel",
+  "tags": [],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

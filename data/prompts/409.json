@@ -1,0 +1,17 @@
+{
+  "id": "409",
+  "title": "Viết email công việc rõ ràng",
+  "description": "Soạn email có tiêu đề, yêu cầu cụ thể và thời hạn phản hồi.",
+  "content": "Soạn một email công việc bằng tiếng Việt dựa trên thông tin sau:\n- Người nhận và quan hệ với tôi: [điền]\n- Mục tiêu email: [điền]\n- Nội dung và dữ kiện cần truyền đạt: [điền]\n- Hành động mong người nhận thực hiện: [điền]\n- Thời hạn phản hồi nếu có: [điền]\n- Giọng văn: [trang trọng / thân thiện / ngắn gọn]\n\nĐầu ra gồm 3 tiêu đề để lựa chọn và 1 email hoàn chỉnh, khoảng 150–250 từ. Đưa mục đích vào đoạn đầu, dùng gạch đầu dòng khi có nhiều yêu cầu, kết thúc bằng hành động cụ thể. Không thêm cam kết, số tiền hay ngày tháng ngoài dữ kiện. Thiếu chi tiết không quan trọng thì để [cần điền]; thiếu mục tiêu hoặc người nhận thì hỏi tối đa 2 câu trước khi viết. Không dùng lời mở đầu quá dài hoặc sáo rỗng.",
+  "departmentId": "general",
+  "categoryId": "communication",
+  "tags": [
+    "email",
+    "giao tiếp",
+    "công việc"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}

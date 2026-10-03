@@ -1,0 +1,34 @@
+[
+  {
+    "id": "writing",
+    "name": "Chung"
+  },
+  {
+    "id": "analysis",
+    "name": "Phân tích"
+  },
+  {
+    "id": "image",
+    "name": "Hình ảnh"
+  },
+  {
+    "id": "presentation",
+    "name": "Thuyết trình"
+  },
+  {
+    "id": "communication",
+    "name": "Giao tiếp"
+  },
+  {
+    "id": "slide",
+    "name": "Slide"
+  },
+  {
+    "id": "planning",
+    "name": "Lập kế hoạch"
+  },
+  {
+    "id": "excel",
+    "name": "Excel"
+  }
+]

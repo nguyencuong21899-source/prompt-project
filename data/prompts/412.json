@@ -1,0 +1,17 @@
+{
+  "id": "412",
+  "title": "Lập kế hoạch dự án có đầu ra cụ thể",
+  "description": "Chia mục tiêu thành giai đoạn, đầu việc, phụ thuộc và tiêu chí hoàn thành.",
+  "content": "Lập kế hoạch triển khai cho công việc/dự án:\n- Mục tiêu: [điền]\n- Kết quả cần bàn giao: [điền]\n- Ngày bắt đầu và hạn cuối: [điền]\n- Nhân sự, ngân sách và nguồn lực hiện có: [điền]\n- Ràng buộc và bên liên quan: [điền]\n\nNếu thiếu mục tiêu hoặc hạn cuối ảnh hưởng đến kế hoạch, hỏi tối đa 3 câu. Với dữ kiện còn thiếu, có thể lập bản nháp và đánh dấu giả định.\n\nĐầu ra:\n1. Phạm vi công việc và tiêu chí nghiệm thu.\n2. Các giai đoạn theo thời gian.\n3. Bảng: Đầu việc | Đầu ra | Vai trò phụ trách đề xuất | Thời lượng ước tính | Phụ thuộc | Mốc hoàn thành.\n4. 5 rủi ro chính và cách theo dõi.\n5. Những việc cần chốt trong cuộc họp khởi động.\n\nKhông tự coi nhân sự hoặc ngân sách đề xuất là đã được phê duyệt. Kiểm tra việc phụ thuộc không kết thúc sau việc sử dụng đầu ra của nó. Ghi rõ các ước tính cần xác nhận.",
+  "departmentId": "general",
+  "categoryId": "planning",
+  "tags": [
+    "dự án",
+    "kế hoạch",
+    "tiến độ"
+  ],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-02",
+  "schemaVersion": 1
+}
