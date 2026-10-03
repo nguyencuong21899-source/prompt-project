@@ -511,6 +511,13 @@
       "description": "Phần mềm Hồ sơ lô điện tử công ty",
       "group": "Phần mềm công ty",
       "url": "https://hsl.traphacocnc.com:44369/Account/Login"
+    },
+    {
+      "id": "893cedda-cb8e-4fb2-b31f-17e503f608a9",
+      "title": "Tạo biên bản họp AI",
+      "description": "Chuyển đổi audio thành text, chuyển đổi text thành biên bản họp",
+      "group": "Phần mềm công ty",
+      "url": "https://stt.traphacocnc.com.vn/"
     }
   ]
 }
