@@ -110,5 +110,12 @@
     "description": "Phần mềm giúp tạo mã QR miễn phí",
     "group": "Phần mềm công ty",
     "url": "https://zxing.appspot.com/generator/"
+  },
+  {
+    "id": "aa4358e5-43bd-4417-aacf-1eda7d6c0b04",
+    "title": "Kiểm tra virus",
+    "description": "Kiểm tra bất kỳ file nào xem có virus hay không",
+    "group": "Phần mềm công ty",
+    "url": "https://www.virustotal.com/gui/home/upload"
   }
 ]
