@@ -525,6 +525,13 @@
       "description": "Phần mềm tạo đề và làm bài kiểm tra công ty",
       "group": "Phần mềm công ty",
       "url": "https://thi.traphacocnc.com.vn/"
+    },
+    {
+      "id": "165131ba-eacb-4727-801a-81b3529305b7",
+      "title": "Phần mềm chỉnh sửa file PDF",
+      "description": "Phần mềm giúp ghép, tách, sửa, xóa, xoay,.. file PDF",
+      "group": "Phần mềm công ty",
+      "url": "https://tools.pdf24.org/vi/"
     }
   ]
 }
