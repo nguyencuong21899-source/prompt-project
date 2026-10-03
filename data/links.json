@@ -117,5 +117,12 @@
     "description": "Kiểm tra bất kỳ file nào xem có virus hay không",
     "group": "Phần mềm công ty",
     "url": "https://www.virustotal.com/gui/home/upload"
+  },
+  {
+    "id": "9567f263-11c9-4a06-af69-fd457c43060a",
+    "title": "Chuyển văn bản thành giọng nói",
+    "description": "Phần mềm giúp Chuyển văn bản thành giọng nói",
+    "group": "Phần mềm AI",
+    "url": "https://auth.vbee.vn/login?session=26f58303-0f33-46fd-9c2f-f0c58aef0fc9"
   }
 ]
