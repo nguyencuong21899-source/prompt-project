@@ -1,0 +1,13 @@
+{
+  "id": "425",
+  "title": "Đề xuất ý tưởng sáng tạo",
+  "description": "Đề xuất ý tưởng sáng tạo hằng ngày",
+  "content": "Tôi đang cần ý tưởng cho: [Việc cụ thể bạn đang làm]\nMục tiêu chính: [Tôi muốn đạt được điều gì]\nĐối tượng: [Ai sẽ đọc / tham gia / trải nghiệm]\nBối cảnh & giới hạn: [Thời gian, nguồn lực, hoặc điều cần tránh – 1–2 dòng]\nHãy đề xuất cho tôi:\n1/ 5 ý tưởng an toàn, dễ triển khai\n2/ 5 ý tưởng khác biệt hơn một chút\nVới mỗi ý tưởng, hãy cho biết:\n1/ Ý chính là gì\n2/ Vì sao phù hợp với mục tiêu và đối tượng\nNếu cần, hãy gợi ý một câu hỏi thông minh để tôi suy nghĩ tiếp.",
+  "departmentId": "general",
+  "categoryId": "writing",
+  "tags": [],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-30",
+  "schemaVersion": 1
+}
