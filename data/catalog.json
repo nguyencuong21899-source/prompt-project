@@ -503,6 +503,19 @@
       "author": "Prompt CNC",
       "updatedAt": "2026-10-30",
       "schemaVersion": 1
+    },
+    {
+      "id": "431",
+      "title": "Tạo slide powerpoint",
+      "description": "Tạo slide powerpoint có thể chỉnh sửa được",
+      "content": "Bạn là chuyên gia thiết kế PowerPoint chuyên nghiệp dành cho doanh nghiệp.\n\nHãy đọc toàn bộ tài liệu tôi đính kèm và **tạo bộ slide PowerPoint (.pptx) theo phong cách nhận diện Traphaco CNC** với các yêu cầu:\n\n1. **Nội dung:** Tự phân tích, tóm tắt và chia thành số lượng slide hợp lý. Nội dung ngắn gọn, logic, dễ hiểu, không bỏ sót thông tin quan trọng và không tự bịa nội dung.\n2. **Thiết kế:** Phong cách doanh nghiệp hiện đại, sang trọng, chủ đạo xanh lá đậm (`#043B30`, `#138650`) kết hợp trắng và xanh nhạt. Có logo Traphaco CNC, bố cục đẹp, đa dạng nhưng đồng bộ.\n3. **Trực quan:** Ưu tiên infographic, sơ đồ, timeline, biểu đồ, icon và các khối nội dung thay vì quá nhiều chữ.\n4. **Khả năng chỉnh sửa:** **BẮT BUỘC tất cả văn bản, tiêu đề, bảng biểu, sơ đồ, hình khối và biểu đồ phải là các đối tượng PowerPoint có thể chỉnh sửa trực tiếp.** Không chuyển nguyên slide thành ảnh nền hoặc ảnh chụp. Hình ảnh minh họa và logo có thể giữ dạng ảnh riêng biệt.\n5. **Định dạng:** Slide 16:9, font tiếng Việt rõ ràng, cỡ chữ phù hợp trình chiếu, không tràn chữ hoặc cắt nội dung.\n6. **Tham chiếu:** Nếu có PowerPoint hoặc HTML mẫu đính kèm, hãy tham khảo phong cách thiết kế, màu sắc và bố cục, nhưng phải dựng lại bằng các đối tượng PowerPoint có thể chỉnh sửa.\n7. **Kiểm tra:** Rà soát từng slide về bố cục, chính tả, khả năng chỉnh sửa và hiển thị trước khi xuất file.\n\n**KẾT QUẢ BẮT BUỘC:** Tạo và cung cấp file PowerPoint `.pptx` hoàn chỉnh để tải về và chỉnh sửa trực tiếp bằng Microsoft PowerPoint. Không chỉ trả về nội dung, mã nguồn, hình ảnh hoặc file PDF. Tự thực hiện toàn bộ mà không cần hỏi lại các chi tiết không thiết yếu.",
+      "departmentId": "general",
+      "categoryId": "writing",
+      "tags": [],
+      "variables": [],
+      "author": "Prompt CNC",
+      "updatedAt": "2026-10-30",
+      "schemaVersion": 1
     }
   ],
   "links": [
