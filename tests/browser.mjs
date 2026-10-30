@@ -86,6 +86,26 @@ context = await chromium.launchPersistentContext(join(fixtureRoot, 'profile'), {
     assert.equal(await popup.locator('#library-view').isVisible(), true);
     assert.equal(await popup.locator('#detail-view').count(), 0);
   });
+  await check('visible library updates automatically and recovers when the network returns',async()=>{
+    const autoPage=await context.newPage();
+    try{
+      await autoPage.clock.install();
+      await autoPage.goto(`chrome-extension://${extensionId}/popup.html`);
+      await autoPage.waitForFunction(()=>document.body.dataset.ready==='true'&&!document.getElementById('refresh-button').disabled);
+      const updated={...baseCatalog,prompts:baseCatalog.prompts.map((prompt,index)=>index===0?{...prompt,title:'Automatic sync regression'}:prompt)};
+      remoteCatalog=updated;
+      await autoPage.clock.fastForward(30000);
+      await autoPage.waitForFunction(()=>document.querySelector('.card-title')?.textContent==='Automatic sync regression');
+      assert.equal(await autoPage.locator('.toast').count(),0);
+      offline=true;
+      await autoPage.clock.fastForward(30000);
+      await autoPage.waitForFunction(()=>document.getElementById('sync-label').dataset.state==='offline');
+      offline=false;remoteCatalog=baseCatalog;
+      await autoPage.evaluate(()=>window.dispatchEvent(new Event('online')));
+      await autoPage.waitForFunction(()=>document.getElementById('sync-label').dataset.state==='ready');
+      await autoPage.waitForFunction(()=>document.querySelector('.card-title')?.textContent!=='Automatic sync regression');
+    }finally{offline=false;remoteCatalog=baseCatalog;await autoPage.close();}
+  });
   await check('links open and save actual bookmarks without duplicates',async()=>{
     await popup.locator('#links-tab').click();
     assert.equal(await popup.locator('#prompt-scopes').isVisible(),false);

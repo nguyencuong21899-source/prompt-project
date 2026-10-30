@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Prompt CNC",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "Thư viện prompt nội bộ cho nhân viên",
   "icons": {
     "16": "extension/icons/16.png",

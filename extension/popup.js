@@ -45,6 +45,7 @@ let preferenceTimer;
 let draftTimer;
 let inserting = false;
 let syncing = false;
+let lastSyncAttempt = 0;
 let previewPrompt = null;
 let syncState = {state:'offline',text:'Dữ liệu mẫu'};
 const fold = text => String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLowerCase();
@@ -164,7 +165,7 @@ async function insertPrompt(content,prompt=null){
   finally{inserting=false;buttons.forEach(button=>busy(button,false));}
 }
 async function syncCatalog(quiet=false){
-  if(syncing)return;syncing=true;busy($('refresh-button'),true);syncLabel('loading','Đang kiểm tra thư viện...');
+  if(syncing)return;syncing=true;lastSyncAttempt=Date.now();busy($('refresh-button'),true);syncLabel('loading','Đang kiểm tra thư viện...');
   try{
     const response=await fetch(RAW_CATALOG+'?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(10000)});
     if(!response.ok)throw Error('HTTP '+response.status);
@@ -180,7 +181,10 @@ async function syncCatalog(quiet=false){
   }catch{syncLabel('offline','Chưa kết nối · dùng bản đã lưu');$('status').textContent=lastSync?'Chưa tải được thư viện mới. Đang dùng dữ liệu đã lưu; bấm Làm mới để thử lại.':'Đang dùng dữ liệu mẫu. Chưa kết nối được máy chủ.';}
   finally{syncing=false;busy($('refresh-button'),false);}
 }
-function maybeSyncCatalog(){if(Date.now()-lastSync>=45000)syncCatalog(true);}
+function maybeSyncCatalog(){
+  const retryAfter=pendingChanges||syncState.state==='offline'?15000:30000;
+  if(document.visibilityState==='visible'&&Date.now()-lastSyncAttempt>=retryAfter)syncCatalog(true);
+}
 function adminStatus(message){$('admin-status').textContent=message;$('admin-status').dataset.tone=/^Đã/.test(message)?'success':/^(Đang|$)/.test(message)?'info':'error';}
 function settings(){
   if(!canLeaveEditor())return;
@@ -529,7 +533,7 @@ async function init(){
   $('open-tab').addEventListener('click',()=>openFullTab().catch(()=>toast('Không mở được tab. Hãy thử lại.')));
   $('refresh-targets').addEventListener('click',()=>refreshTargets().catch(()=>toast('Không đọc được danh sách tab AI.')));
   $('chat-target').addEventListener('change',()=>{targetId=Number($('chat-target').value)||null;});
-  await refreshTargets();
+  refreshTargets().catch(()=>{});
   $('close-preview').addEventListener('click',()=>$('prompt-preview').close());
   $('prompt-preview').addEventListener('close',()=>{previewPrompt=null;});
   $('copy-preview').addEventListener('click',()=>{if(previewPrompt)copyText(previewPrompt.content,previewPrompt);});
@@ -592,7 +596,8 @@ async function init(){
     else if(usageChanged&&!$('prompt-preview').open&&['recent','frequent'].includes($('sort-order').value))filterList();
   });
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')maybeSyncCatalog();});
-  setInterval(()=>{if(document.visibilityState==='visible')maybeSyncCatalog();},60000);
+  window.addEventListener('online',()=>{if(document.visibilityState==='visible')syncCatalog(true);});
+  setInterval(maybeSyncCatalog,15000);
   $('open-optimizer').addEventListener('click',()=>{show('optimizer-view');$('optimizer-status').textContent='';});
   $('back-optimizer').addEventListener('click',()=>show('library-view'));
   $('optimizer-form').addEventListener('submit',optimize);
