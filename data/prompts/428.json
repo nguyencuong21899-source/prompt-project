@@ -1,0 +1,13 @@
+{
+  "id": "428",
+  "title": "PHÂN TÍCH DỮ LIỆU & RÚT INSIGHT",
+  "description": "PHÂN TÍCH DỮ LIỆU",
+  "content": "Tôi có [dữ liệu định tính / định lượng / hỗn hợp] về [chủ đề].\nData / Thông tin:\n\n[Đính kèm file dữ liệu hoặc mô tả chi tiết nếu dữ liệu quá nhiều]\nLoại phân tích tôi cần (chọn theo tình huống):\n1. Tìm 3–5 pattern hoặc xu hướng chính\n2. Phân tích và diễn giải các con số quan trọng\n3. Đề xuất cách trực quan hóa dữ liệu cho dễ hiểu\n4. Đưa ra 2–3 khuyến nghị cụ thể có thể hành động ngay\n5. Chỉ ra rủi ro tiềm ẩn hoặc điểm mù cần lưu ý\n6. Hãy chỉ ra điều gì là bất ngờ hoặc đi ngược lại suy nghĩ ban đầu.\nNếu là dữ liệu định lượng:\n1. Các phép tính cần thực hiện: [tăng trưởng %, so sánh giai đoạn, tỷ lệ, dự báo…]\n2. Format output mong muốn: [bảng, biểu đồ, tóm tắt dạng narrative…]\nBối cảnh:\n[Phân tích này dùng để ra quyết định gì, phục vụ cho mục tiêu nào]",
+  "departmentId": "general",
+  "categoryId": "analysis",
+  "tags": [],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-30",
+  "schemaVersion": 1
+}
