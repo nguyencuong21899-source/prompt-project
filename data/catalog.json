@@ -477,6 +477,19 @@
       "author": "Prompt CNC",
       "updatedAt": "2026-10-30",
       "schemaVersion": 1
+    },
+    {
+      "id": "429",
+      "title": "Học tập về 1 chủ đề nào đó",
+      "description": "HỌC TẬP",
+      "content": "Tôi cần học / hiểu về: [Chủ đề hoặc khái niệm]\nTrình độ hiện tại: [Người mới / Có kiến thức nền / Nâng cao]\nMục tiêu học: [Cần hiểu để làm gì, áp dụng vào bối cảnh công việc cụ thể nào]\nThời gian có thể dành: [Bao nhiêu giờ mỗi ngày hoặc mỗi tuần]\n\n\nHãy giúp tôi:\n1/ Giải thích chủ đề này ở mức độ phù hợp với trình độ của tôi\n2/ Chỉ ra các khái niệm hoặc framework cốt lõi bắt buộc phải hiểu\n3/ Nêu những hiểu lầm hoặc sai sót phổ biến người học thường gặp\n4/ Đề xuất lộ trình học từ nền tảng → trung cấp → nâng cao\n\n5/ Gợi ý bài tập thực hành hoặc mini-project để áp dụng kiến thức",
+      "departmentId": "general",
+      "categoryId": "writing",
+      "tags": [],
+      "variables": [],
+      "author": "Prompt CNC",
+      "updatedAt": "2026-10-30",
+      "schemaVersion": 1
     }
   ],
   "links": [
