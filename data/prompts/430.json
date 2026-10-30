@@ -1,0 +1,13 @@
+{
+  "id": "430",
+  "title": "Tạo slide dạng web",
+  "description": "Tạo slide dạng web html/css",
+  "content": "Bạn là chuyên gia thiết kế slide và lập trình HTML/CSS/JavaScript.\n\nHãy đọc toàn bộ tài liệu tôi đính kèm và **tạo một bộ slide trình chiếu chuyên nghiệp theo phong cách Traphaco CNC** với các yêu cầu:\n\n1. **Nội dung:** Tự phân tích, tóm tắt và chia thành số lượng slide hợp lý. Trình bày ngắn gọn, logic, dễ hiểu, không bỏ sót ý quan trọng và không tự bịa thông tin.\n2. **Thiết kế:** Theo nhận diện Traphaco CNC, chủ đạo xanh lá đậm (`#043B30`, `#138650`) kết hợp trắng, xanh nhạt. Có logo công ty, bố cục hiện đại, sang trọng, đồng nhất nhưng đa dạng giữa các slide.\n3. **Trực quan:** Ưu tiên infographic, sơ đồ, timeline, biểu đồ, icon SVG và các thẻ nội dung thay vì quá nhiều chữ.\n4. **Kỹ thuật:** Tạo **một file HTML duy nhất** tích hợp CSS/JS, tỷ lệ 16:9, tự co giãn màn hình, hoạt động offline, hỗ trợ chuyển slide bằng phím mũi tên, toàn màn hình và xem tổng quan slide.\n5. **Chất lượng:** Font tiếng Việt rõ ràng, không tràn chữ, không cắt nội dung, phù hợp trình chiếu trên màn hình lớn.\n6. **Tham chiếu:** Nếu có file HTML mẫu đính kèm, hãy sử dụng làm chuẩn về màu sắc, logo và phong cách thiết kế.\n\n**Kết quả:** Hãy trực tiếp tạo file `.html` hoàn chỉnh để tôi tải về, kèm ảnh tổng quan các slide nếu có thể. Không chỉ trả về mã nguồn hoặc hướng dẫn. Tự thực hiện toàn bộ, không cần hỏi lại những chi tiết không thiết yếu.",
+  "departmentId": "general",
+  "categoryId": "presentation",
+  "tags": [],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-30",
+  "schemaVersion": 1
+}
