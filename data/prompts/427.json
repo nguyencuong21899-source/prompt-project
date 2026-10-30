@@ -1,0 +1,13 @@
+{
+  "id": "427",
+  "title": "Đề xuất cách giải quyết vấn đề",
+  "description": "Đề xuất cách giải quyết vấn đề",
+  "content": "Tôi đang gặp vấn đề: [Mô tả ngắn gọn]\n\nVấn đề cụ thể:\n- What: [Chuyện gì đang xảy ra]\n- Impact: [Ảnh hưởng cụ thể – ví dụ mất bao nhiêu thời gian, ảnh hưởng bao nhiêu % kết quả]\n- Timeline: [Cần giải quyết khi nào]\n\nĐã thử (nếu có): [Cách đã thử và kết quả]\n\nGiới hạn hiện tại: [Giới hạn về thời gian, ngân sách, nguồn lực]\n\nMong muốn: [Kết quả lý tưởng là gì]\n\nHãy giúp tôi:\n1/ Nhìn lại và diễn giải lại vấn đề (nguyên nhân gốc có thể khác vấn đề bề mặt)\n2/ Đưa ra 3–5 giải pháp, từ xử lý nhanh đến xử lý toàn diện. Với mỗi giải pháp: cách làm, ưu/nhược điểm, mức độ nỗ lực\n3/ Đề xuất hướng tiếp cận phù hợp nhất trong bối cảnh hiện tại\n4/ Các bước hành động cụ thể để bắt đầu ngay\n\nBối cảnh: [Các bên liên quan, những gì đã xảy ra nếu cần thiết]",
+  "departmentId": "general",
+  "categoryId": "writing",
+  "tags": [],
+  "variables": [],
+  "author": "Prompt CNC",
+  "updatedAt": "2026-10-30",
+  "schemaVersion": 1
+}
